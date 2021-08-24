@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
- static final String id = "home_page";
+  static final String id = "home_page";
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -15,24 +15,33 @@ class _HomePageState extends State<HomePage> {
         title: Text("UI"),
       ),
       body: Center(
-        child:Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-      Text('User', style: _CTS(color: Colors.red),),
-      SizedBox(width: 20,),
-      Text("interface",style: _CTS(),)
-    ],
-
-        )
-      ),
+          child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'User',
+            style: _CTS(color: Colors.red),
+          ),
+          SizedBox(
+            width: 16,
+          ),
+          Text(
+            "interface",
+            style: _CTS(),
+          )
+        ],
+      )),
     );
   }
 }
- _CTS({Color? color = Colors.green, int? size}){
+
+TextStyle _CTS({Color? color = Colors.green, double? size = 30}) {
   return TextStyle(
-    fontSize: 30,color: color,
+    fontSize: size,
+    color: color,
   );
 }
-TextStyle customStyle(){
+
+TextStyle customStyle() {
   return TextStyle(fontSize: 20);
 }
