@@ -44,6 +44,7 @@ class _IntroPageState extends State<IntroPage> {
           title: Strings.stepThreeTitle,
           message: Strings.stepThreeMessage),
     ];
+    print(_itemsList[0].title);
   }
 
   @override

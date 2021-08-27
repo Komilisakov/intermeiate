@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intermeiate/pages/home_page.dart';
 import 'package:intermeiate/pages/intro_page.dart';
 import 'package:intermeiate/pages/login_page.dart';
+import 'package:intermeiate/pages/market_ui.dart';
 import 'package:intermeiate/pages/shop_ui.dart';
 
 void main() {
@@ -18,14 +19,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
+          // appBarTheme: AppBarTheme.of(context).,
+        brightness: Brightness.light,
       ),
-      home: IntroPage(),
+      home: MarketUI(),
       routes: {
         HomePage.id: (context) => HomePage(),
         LoginPage.id: (context) => LoginPage(),
         ShopUI.id: (context) => ShopUI(),
         IntroPage.id: (context) => IntroPage(),
+        MarketUI.id: (context) => MarketUI(),
       },
       );
   }
