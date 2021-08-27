@@ -97,7 +97,7 @@ class _ShopUIState extends State<ShopUI> {
                 child: Container(
               padding: EdgeInsets.symmetric(horizontal: 14),
               child: GridView.count(
-                crossAxisCount: 2,
+                crossAxisCount: 1,
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 children: _listItem.map((item) => cellOfList(item)).toList(),

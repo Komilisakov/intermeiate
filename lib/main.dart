@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intermeiate/pages/home_page.dart';
+import 'package:intermeiate/pages/intro_page.dart';
 import 'package:intermeiate/pages/login_page.dart';
 import 'package:intermeiate/pages/shop_ui.dart';
 
@@ -19,11 +20,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ShopUI(),
+      home: IntroPage(),
       routes: {
         HomePage.id: (context) => HomePage(),
         LoginPage.id: (context) => LoginPage(),
-        ShopUI.id: (context) => ShopUI()
+        ShopUI.id: (context) => ShopUI(),
+        IntroPage.id: (context) => IntroPage(),
       },
       );
   }
