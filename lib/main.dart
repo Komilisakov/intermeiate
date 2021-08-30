@@ -5,6 +5,7 @@ import 'package:intermeiate/pages/hotel_ui.dart';
 import 'package:intermeiate/pages/intro_page.dart';
 import 'package:intermeiate/pages/login_page.dart';
 import 'package:intermeiate/pages/market_ui.dart';
+import 'package:intermeiate/pages/party_ui.dart';
 import 'package:intermeiate/pages/shop_ui.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         // brightness: Brightness.dark,
       ),
-      home: HotelUI(),
+      home: PartyUI(),
       routes: {
         HomePage.id: (context) => HomePage(),
         LoginPage.id: (context) => LoginPage(),
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         IntroPage.id: (context) => IntroPage(),
         MarketUI.id: (context) => MarketUI(),
         HotelUI.id: (context) => HotelUI(),
+        PartyUI.id: (context) => PartyUI(),
       },
     );
   }
