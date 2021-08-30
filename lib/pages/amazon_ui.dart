@@ -247,25 +247,6 @@ class _AmazonUIPageState extends State<AmazonUIPage> {
                           height: MediaQuery.of(context).size.width,
                           child: Column(
                             children: [
-                              // Expanded(
-                              //   child: Column(
-                              //     children: [
-                              //       Expanded(
-                              //         child: Image(
-                              //           image: AssetImage("assets/images/item_7.jpeg"),
-                              //           fit: BoxFit.cover,
-                              //         ),
-                              //       ),
-                              //       SizedBox(height: 5,),
-                              //       Expanded(
-                              //         child: Image(
-                              //           image: AssetImage("assets/images/item_6.jpeg"),
-                              //           fit: BoxFit.cover,
-                              //         ),
-                              //       ),
-                              //     ],
-                              //   ),
-                              // ),
                               Image(
                                 width: double.infinity,
                                 height: 240,
