@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intermeiate/pages/amazon_ui.dart';
+import 'package:intermeiate/pages/facebook_ui.dart';
 import 'package:intermeiate/pages/home_page.dart';
 import 'package:intermeiate/pages/hotel_ui.dart';
 import 'package:intermeiate/pages/intro_page.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         // brightness: Brightness.dark,
       ),
-      home: AmazonUIPage(),
+      home: FacabookUI(),
       routes: {
         HomePage.id: (context) => HomePage(),
         LoginPage.id: (context) => LoginPage(),
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         HotelUI.id: (context) => HotelUI(),
         PartyUI.id: (context) => PartyUI(),
         AmazonUIPage.id: (context) => AmazonUIPage(),
+        FacabookUI.id: (context) => FacabookUI(),
       },
     );
   }
