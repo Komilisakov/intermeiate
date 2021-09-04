@@ -4,6 +4,7 @@ import 'package:intermeiate/pages/amazon_ui.dart';
 import 'package:intermeiate/pages/facebook_ui.dart';
 import 'package:intermeiate/pages/home_page.dart';
 import 'package:intermeiate/pages/hotel_ui.dart';
+import 'package:intermeiate/pages/instagram_ui.dart';
 import 'package:intermeiate/pages/intro_page.dart';
 import 'package:intermeiate/pages/login_page.dart';
 import 'package:intermeiate/pages/market_ui.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         // brightness: Brightness.dark,
       ),
-      home: FacabookUI(),
+      home: InstagramUI(),
       routes: {
         HomePage.id: (context) => HomePage(),
         LoginPage.id: (context) => LoginPage(),

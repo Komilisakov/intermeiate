@@ -15,7 +15,8 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   simple_animations: ^3.1.1
-
+  font_awesome_flutter: ^9.1.0
+#  flutter_icons: ^1.0.0+1
 
 dev_dependencies:
   flutter_test:
@@ -33,7 +34,12 @@ flutter:
     - assets/images/cars/
     - assets/images/hotel/
     - assets/images/facebook/
-  #   - images/a_dot_ham.jpeg
+    - assets/images/instagram/
+
+  fonts:
+   - family:  MyFlutterApp
+     fonts:
+      - asset: assets/custom_icons/MyFlutterApp.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
